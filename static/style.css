@@ -1,0 +1,96 @@
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(120deg, #3498db, #9b59b6); 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+h1 {
+  color: white;
+  font-size: 3em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+  animation: none; /* No animation */
+}
+
+
+.container {
+  background: rgba(255, 255, 255, 0.1); /* Polished Surface Effect */
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 800px; /* Increased width */
+  width: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+h3 {
+  color: white;
+  font-size: 1.5em; 
+  margin-bottom: 20px;
+}
+
+
+.file-input-container {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+
+input[type="file"] {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+
+label {
+  display: block;
+  width: 70%;
+  padding: 15px;
+  background: #ffffff; /* White Background */
+  color: #333; /* Dark Text Color */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  font-size: 1em;
+  text-align: center;
+  margin: 100px
+}
+
+
+label:hover {
+  background: #f0f0f0; 
+  transform: scale(1.05);
+}
+
+
+input[type="submit"] {
+  display: block;
+  margin: 20px auto 0; 
+  padding: 10px 20px;
+  border: none;
+  background: #4b0082; 
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Submit Button Hover Effect */
+input[type="submit"]:hover {
+  background: #6a1b9a; /* Slightly Lighter Purple */
+  transform: scale(1.05);
+}

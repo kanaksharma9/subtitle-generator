@@ -1,0 +1,18 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Processed Video</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Processed Video</h1>
+      <video width="800" controls>
+        <source src="/processed/{{ processed_filename }}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <a href="/processed/{{ processed_filename }}" download>Download Video</a>
+    </div>
+  </body>
+</html>

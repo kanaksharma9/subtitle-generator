@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Video Subtitle Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <h1>Subtitle Generator</h1>
+    <div class="container">
+      <h3>Upload a Video</h3>
+      <form action="/upload" method="post" enctype="multipart/form-data">
+        <div class="file-input-container">
+          <input type="file" id="video-file" name="video" accept="video/*">
+          <label for="video-file">Choose Video File</label>
+        </div>
+        <input type="submit" value="Upload Video">
+      </form>
+    </div>
+  </body>
+</html>
